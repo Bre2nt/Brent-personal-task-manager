@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #90b2f5;
+    background: #917ea9;
     color: hsl(213, 16%, 11%);
 }
 
@@ -39,6 +39,10 @@ h2 {
     text-decoration: none;
     margin-bottom: 25px;
 }
+.add-task-container {
+    text-align: right;
+    margin-top: 20px;
+}
 
 .add-button:hover {
     background: #014421;
@@ -52,7 +56,7 @@ table {
 }
 
 th {
-    background: #1e293b;
+    background: #1e3a5f;
     color: white;
     padding: 14px;
     text-align: left;
@@ -75,6 +79,9 @@ tr:hover {
     border-radius: 6px;
     text-decoration: none;
     margin-right: 5px;
+    font-size: 14px;
+    min-width: 65px;
+    text-align: center;
 }
 
 .edit-button:hover {
@@ -88,6 +95,9 @@ tr:hover {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
+    min-width: 65px;
+    text-align: center;
 }
 
 .delete-button:hover {
@@ -129,7 +139,7 @@ select:focus {
 }
 
 .save-button {
-    background: #0ee936;
+    background: #03a916;
     color: white;
     padding: 11px 20px;
     border: none;
@@ -145,12 +155,13 @@ select:focus {
 .back-button {
     display: inline-block;
     margin-top: 15px;
-    color: #475569;
+    color: #2563eb;
     text-decoration: none;
 }
 
 .back-button:hover {
-    color: #2563eb;
+    color: #1e3a5f;
+    font-weight: bold;
 }
 
 .success-message {
