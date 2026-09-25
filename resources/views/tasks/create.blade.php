@@ -7,7 +7,7 @@
 
 <body>
 
-<div class="container">
+<div class="form-container">
 
     <h1>Add New Task</h1>
 
@@ -25,20 +25,32 @@
 
         @csrf
 
-        <label>Task Name</label>
-        <input type="text" name="task_name" placeholder="Enter task name">
+        <div class="form-group">
+            <label>Task Name</label>
+            <input type="text" name="task_name" placeholder="Enter task name">
+        </div>
 
-        <label>Description</label>
-        <textarea name="description" placeholder="Enter task description"></textarea>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" placeholder="Enter description"></textarea>
+        </div>
 
-        <label>Status</label>
-        <select name="status">
-            <option value="Pending">Pending</option>
-            <option value="Completed">Completed</option>
-        </select>
+        <div class="form-row">
 
-        <label>Due Date</label>
-        <input type="date" name="due_date">
+            <div class="form-group">
+                <label>Status</label>
+                <select name="status">
+                    <option value="Pending">Pending</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Due Date</label>
+                <input type="date" name="due_date">
+            </div>
+
+        </div>
 
         <button type="submit" class="save-button">
             Save Task
